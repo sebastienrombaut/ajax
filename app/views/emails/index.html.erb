@@ -1,0 +1,26 @@
+<div align="center">
+  <h1>Index de tous nos Emails !! :)</h1>
+  
+	<table class="table table-striped">
+  	<tr>
+  	  <th scope="col" style="text-align: center">Liste </th>
+  	  <th scope="col" style="text-align: center">Contenu </th>
+  	</tr>
+
+    <% @emails.each do |email| %>
+  	<tr id="email<%=email.id%>">
+	  <td id= "email_object<%=email.id%>" style="text-align: center; font-weight: 700"><%= email.object %>&nbsp;
+	  	 <div id="btn">
+	  	 <%= link_to "Lire", email, method: :get, remote: true, class: "btn btn-info" %>
+	  	</div>
+	  </td>
+      <td id="email_body<%=email.id%>" style="text-align: center; display:none">
+		<strong>Sujet du mail : <%= email.object %></strong>
+		<br>Contenu du mail : <%= email.body %><br>
+      	<%= link_to "Supprimer", email, method: :delete, remote: true, data: { confirm: 'Are you sure ?'}, class: "btn btn-danger" %>
+      </td>
+    </tr>
+    <% end %>
+	</table>
+  
+</div>
