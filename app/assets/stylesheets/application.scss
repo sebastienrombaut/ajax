@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
- 
+
 
 .liste:hover {
 	background-color: #F55B59;
@@ -34,4 +34,12 @@ h1 {
 	width: 80%;
 	border-radius: 10px;
 	background-color: white;
+}
+
+#content img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 20%;
+    width: auto;
 }
