@@ -13,8 +13,25 @@
  *= require_tree .
  *= require_self
  */
+ 
 
 .liste:hover {
-	background-color: #a7f28a;
+	background-color: #F55B59;
 	color: white;
+}
+
+h1 {
+	color: black;
+	padding-top: 10%;
+}
+
+#all {
+	background-image: radial-gradient(circle at center, white, #7A7A7A);
+    height: 100vh;
+}
+
+.body {
+	width: 80%;
+	border-radius: 10px;
+	background-color: white;
 }
