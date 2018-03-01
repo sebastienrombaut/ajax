@@ -9,7 +9,7 @@
 
     <% @emails.each do |email| %>
   	<tr id="email<%=email.id%>">
-	  <td id= "email_object<%=email.id%>" style="text-align: center; font-weight: 700"><%= email.object %>&nbsp;
+	  <td class="liste" id= "email_object<%=email.id%>" style="text-align: center; font-weight: 700"><%= email.object %>&nbsp;
 	  	 <div id="btn">
 	  	 <%= link_to "Lire", email, method: :get, remote: true, class: "btn btn-info" %>
 	  	</div>
@@ -17,7 +17,7 @@
       <td id="email_body<%=email.id%>" style="text-align: center; display:none">
 		<strong>Sujet du mail : <%= email.object %></strong>
 		<br>Contenu du mail : <%= email.body %><br>
-      	<%= link_to "Supprimer", email, method: :delete, remote: true, data: { confirm: 'Are you sure ?'}, class: "btn btn-danger" %>
+      	<%= link_to "Supprimer", email, method: :delete, remote: true, data: { confirm: 'Tu veux vraiment faire ça :O ?'}, class: "btn btn-danger" %>
       </td>
     </tr>
     <% end %>

@@ -3,11 +3,17 @@ $( document ).ready(function() {
 $("#email_object<%=@email.id%>").on("click", function () {
 	$("#email_body<%=@email.id%>").fadeIn();
 	$("#email_object<%=@email.id%>").css({'font-weight': '400'});
-	$("#email_object<%=@email.id%>").append("<p><i> - Lu </i></p>");
 	$("#email_object<%=@email.id%> #btn").hide();	
-
+	$("#email_object<%=@email.id%>").css({'background-color': '#a7f28a'});
 	
 }).click();
+
+$("#email_object<%=@email.id%>").one("click", function () {
+
+	$("#email_object<%=@email.id%>").append("<p><i> - Lu </i></p>");
+
+}).click();
+
 
 });
 

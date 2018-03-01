@@ -1,13 +1,10 @@
 class EmailsController < ApplicationController
   def index
   	@emails = Email.all
-  	respond_to do |format|
-      format.html 
-      format.js  
-
+ 
   end
 
-  end
+
 
   def show
     @email = Email.find(params[:id])
@@ -16,8 +13,7 @@ class EmailsController < ApplicationController
       format.html 
       format.js  
 
-  end
-
+  	end
   end
 
   def destroy
