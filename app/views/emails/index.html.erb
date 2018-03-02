@@ -15,7 +15,7 @@
 	  	</tr>
 
 	    <% @emails.each do |email| %>
-	  	<tr id="email<%=email.id%>">
+	  	<tr id="email<%=email.id%>" >
 		  <td class="liste" id= "email_object<%=email.id%>" style="text-align: center; font-weight: 700"><%= email.object %>&nbsp;
 		  	 <div id="btn">
 		  	 <%= link_to "Lire", email, method: :get, remote: true, class: "btn btn-info" %>

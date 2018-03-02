@@ -1,8 +1,7 @@
 //@email.destroy
 
 $( document ).ready(function() {
-
-$("#email_body<%=@email.id%>").on("click", function () {
+	$("#email_body<%=@email.id%>").on("click", function () {
 	$("#email<%=@email.id%>").fadeOut();	
 }).click();
 
